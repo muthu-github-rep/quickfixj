@@ -14,9 +14,8 @@ public class QuickfixjApplication {
 		QuickFixJServerConfiguration quickFixJServer=applicationContext.getBean(QuickFixJServerConfiguration.class);
 		quickFixJServer.loadConfiguration();
 		quickFixJServer.logon();
-		for (int i=0;i<2500;i++) {
-			quickFixJServer.sendMessage();
-		}
+		quickFixJServer.sendMessage();
+
 
 
 	}
